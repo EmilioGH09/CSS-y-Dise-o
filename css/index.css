@@ -1,0 +1,138 @@
+body{
+  margin: 1%;
+  font-family: 'Dancing Script', cursive;
+  animation-name: anim;
+  animation-duration: 1s;
+  background-color: #02010a;
+}
+header{
+  width: 100%;
+  background-color: #5b7989;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 1%;
+  display: flex;
+  max-height: 20%;
+  color: white;
+}
+nav {
+  display: block;
+  margin-left: auto;
+  width: 30%;
+  text-align: center;
+}
+nav a{
+  position: relative;
+  top: 40%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+}
+#ainicio{
+  text-decoration: none;
+}
+#contenido{
+  width: 100%;
+}
+#bloque1{
+  width: 100%;
+  background-color: #82c3a6;
+  padding: 1%;
+
+}
+#bloque1 img{
+  width: 60%;
+  transform: translate(-50%.50%);
+  max-height: 50vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#bloque2{
+  width: 100%;
+  background-color:  #d5c75f ;
+  display: flex;
+  padding: 1%;
+  border: 1px solid black;
+}
+#fig1, #fig2{
+  width: 50%;
+  padding: 1%;
+  text-align: center;
+  text-decoration: underline;
+}
+#img2, #img3{
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px solid black;
+}
+#img2:hover{
+  transition: transform, .5s;
+  transform: rotate(10deg);
+}
+#img3:hover{
+  transition: transform, .5s;
+  transform: translate(20px,-5px);
+}
+footer{
+  display: flex;
+  background-color: #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1%;
+  width: 100%;
+}
+footer div{
+  width: 25%;
+  margin: 1%;
+}
+footer div img{
+  height: 20px;
+  width: 20px;
+}
+@keyframes anim {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+@media (max-width: 900px) {
+  header{
+    flex-direction: column;
+    text-align: center;
+  }
+  header nav{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #bloque2{
+    flex-direction: column;
+  }
+  #fig1, #fig2{
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  figure img{
+    width: 100%;
+    height: 100%;
+  }
+  footer{
+    flex-direction: column;
+    padding-left: 10%;
+  }
+  footer div{
+    width: 100%;
+  }
+
+}
